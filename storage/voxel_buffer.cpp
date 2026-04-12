@@ -745,9 +745,7 @@ bool VoxelBuffer::get_channel_as_bytes_read_only(unsigned int channel_index, Spa
 		return true;
 	}
 	// TODO Could we just return `Span<uint8_t>(&channel.defval, 1)` alongside the `false` return?
-	// slice = Span<const uint8_t>();
-    // yes, yes we could... kind of:
-    slice = Span<const uint8_t>(reinterpret_cast<const uint8_t*>(&channel.defval), sizeof(channel.defval));
+	slice = Span<const uint8_t>();
 	return false;
 }
 

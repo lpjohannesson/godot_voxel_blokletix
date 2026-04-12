@@ -513,11 +513,7 @@ void MeshBlockTask::build_mesh() {
 		collision_hint,
 		lod_hint,
 		// TODO Gathering detail texture information is not always necessary
-		true, // detail_texture_hint
-        lightingEnabled,
-        lightData,
-        lightCompressedData,
-        lightMinimum
+		true // detail_texture_hint
 	};
 	mesher->build(_surfaces_output, input);
 
