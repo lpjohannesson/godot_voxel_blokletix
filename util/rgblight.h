@@ -3,7 +3,6 @@
 
 #include <array>
 #include <algorithm>
-#include <cstdio>
 
 struct alignas(1) RGBLight {
     uint8_t r = 0;
